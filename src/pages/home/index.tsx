@@ -4,6 +4,7 @@
 import IntroInfoCard from "@/components/Introduction/intro";
 import SGPAHome from "../sgpa/sgpaHome";
 import CGPAHome from "../cgpa/cgpaHome";
+import AboutMeButton from "@/components/aboutButton/aboutMe";
 
 const HomePage = () => {
 

@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../assets/madaraLogo.png";
 import { useNavigate, useLocation } from "react-router";
 import { useTheme } from "@/components/theme-provider/theme-provider";
+import AboutMeButton from "../aboutButton/aboutMe";
 
 export const Footer: React.FC = () => {
 
@@ -110,7 +111,8 @@ export const Footer: React.FC = () => {
 
         {/* Copyright Section */}
         <div className="text-center text-white dark:text-gray-400 text-sm pb-15 sm:pb-0">
-          © {new Date().getFullYear()} Madara's Den. All rights reserved by Ritanjit Das.
+          © {new Date().getFullYear()} Madara's Den. All rights reserved by &nbsp;&nbsp;
+          < AboutMeButton />
         </div>
       </div>
     </footer>
