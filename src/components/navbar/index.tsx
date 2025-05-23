@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
 
         {/* Decorative Logo - Moves to Right for Small Screens */}
-        <img src={Logo} alt="Logo" className="absolute right-38 sm:right-255 z-50 h-20 sm:h-16 w-auto 
+        <img src={Logo} alt="Logo" className="absolute right-5 sm:right-255 z-50 h-20 sm:h-16 w-auto 
         hover:cursor-pointer"
             onClick={() => {
               if (location.pathname === "/") {
@@ -81,7 +81,7 @@ const Navbar = () => {
 
 
       {/* Bottom Navbar (Mobile Only) */}
-      <div
+      {/* <div
         className={`
           fixed z-50 bottom-0 left-0 w-full
           ${theme === "light" ?
@@ -95,7 +95,7 @@ const Navbar = () => {
         <NavItem href="/collections" icon={<Layers size={24} />} label="Collections" />
         <NavItem href="/events" icon={<Calendar size={24} />} label="Event" />
         <NavItem href="/about" icon={<Info size={24} />} label="About Us" />
-      </div>
+      </div> */}
 
 
     </>
