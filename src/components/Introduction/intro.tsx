@@ -3,8 +3,13 @@ import { Link } from "react-router-dom";
 import { Calculator, ArrowRight } from "lucide-react";
 import img from "../../assets/animebg.gif";
 import { ArrowDown } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
 
 const IntroInfoCard: React.FC = () => {
+
+    const navigate = useNavigate();
+
     return (
         <>
             <section className="w-full bg-stone-100 dark:bg-zinc-900 pt-40 px-4 sm:px-6 lg:px-12 transition-all fade-in">
@@ -27,6 +32,10 @@ const IntroInfoCard: React.FC = () => {
                             <div className="flex flex-wrap gap-4 pt-2">
                                 <Link
                                     to="/cgpa"
+                                    onClick={() => {
+                                        navigate("/about");
+                                        window.scrollTo({ top: 0, behavior: "instant" });
+                                    }}
                                     className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-red-900 
                   text-white font-semibold hover:bg-amber-500 hover:text-white 
                   transition-all duration-300 shadow-md hover:scale-105 text-sm"
@@ -37,6 +46,10 @@ const IntroInfoCard: React.FC = () => {
 
                                 <Link
                                     to="/sgpa"
+                                    onClick={() => {
+                                        navigate("/about");
+                                        window.scrollTo({ top: 0, behavior: "instant" });
+                                    }}
                                     className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-zinc-700 
                   text-white font-semibold hover:bg-amber-500 hover:text-white 
                   transition-all duration-300 shadow-md hover:scale-105 text-sm"
@@ -55,13 +68,13 @@ const IntroInfoCard: React.FC = () => {
                     </div>
                 </div>
 
-            {/* Floating Arrow Animation */}
-            <div className="flex justify-center mt-20">
-                <ArrowDown
-                    size={30}
-                    className="animate-bounce text-red-900 dark:text-white"
-                />
-            </div>
+                {/* Floating Arrow Animation */}
+                <div className="flex justify-center mt-20">
+                    <ArrowDown
+                        size={30}
+                        className="animate-bounce text-red-900 dark:text-white"
+                    />
+                </div>
             </section>
         </>
     );
