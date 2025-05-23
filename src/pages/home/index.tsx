@@ -2,6 +2,8 @@
 // import HomeCollections from "../../components/collections/homeCollections";
 // import HomeNewsHighlights from "@/components/bulletin/homeNews";
 import IntroInfoCard from "@/components/Introduction/intro";
+import SGPAHome from "../sgpa/sgpaHome";
+import CGPAHome from "../cgpa/cgpaHome";
 
 const HomePage = () => {
 
@@ -10,8 +12,8 @@ const HomePage = () => {
     <>
       {/* < Hero06 /> */}
       < IntroInfoCard />
-      {/* < HomeCollections /> */}
-      {/* < HomeNewsHighlights /> */}
+      < CGPAHome />
+      < SGPAHome />
     </>
 
   );

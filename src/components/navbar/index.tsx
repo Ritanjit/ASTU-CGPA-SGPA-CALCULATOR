@@ -56,12 +56,12 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-4">
           <NavLink href="/" label="HOME" />
           {/* <NavLink href="/player" label="PLAYER" /> */}
-          <NavLink href="/cgpa" label="CGPA" />
-          <NavLink href="/sgpa" label="SGPA" />
+          {/* <NavLink href="/cgpa" label="CGPA" />
+          <NavLink href="/sgpa" label="SGPA" /> */}
           {/* <NavLink href="/collections" label="COLLECTIONS" />
           <NavLink href="/events" label="EVENTS" />
           <NavLink href="/visit" label="VISIT" /> */}
-          <NavLink href="/about" label="ABOUT" />
+          {/* <NavLink href="/about" label="ABOUT" /> */}
         </ul>
 
         {/* Right Side - Login & Theme Toggle */}
