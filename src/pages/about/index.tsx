@@ -4,7 +4,7 @@ import profile from "../../assets/DFAS.png";
 
 const AboutMe: React.FC = () => {
   return (
-    <section className="w-full min-h-screen py-32 px-4 sm:px-6 lg:px-12 bg-stone-100 dark:bg-zinc-900 transition-all">
+    <section className="w-full min-h-screen py-32 px-4 sm:px-6 lg:px-12 bg-stone-100 dark:bg-zinc-900 transition-all fade-in">
       <div className="max-w-3xl mx-auto bg-white dark:bg-zinc-800 rounded-3xl shadow-xl p-10 space-y-8">
 
         {/* Header */}

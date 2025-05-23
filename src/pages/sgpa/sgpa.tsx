@@ -75,7 +75,7 @@ const SGPA = () => {
     };
 
     return (
-        <section className="w-full bg-stone-100 dark:bg-zinc-900 py-32 px-4 sm:px-6 lg:px-12 transition-all">
+        <section className="w-full bg-stone-100 dark:bg-zinc-900 py-32 px-4 sm:px-6 lg:px-12 transition-all fade-in">
             <div className="max-w-[850px] mx-auto rounded-3xl shadow-xl bg-white dark:bg-zinc-800 p-10 pt-5 pb-7 space-y-6">
                 <h1 className="text-3xl sm:text-4xl font-bold text-red-900 dark:text-white text-center">
                     SGPA Calculator
