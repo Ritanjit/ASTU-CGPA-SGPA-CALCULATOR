@@ -20,7 +20,7 @@ const CGPA = () => {
         const validSgpas = sgpas.filter((sgpa) => sgpa !== "");
         const sum = validSgpas.reduce((acc, sgpa) => acc + Number(sgpa), 0);
         const cgpa = validSgpas.length > 0 ? sum / validSgpas.length : 0;
-        const percentage = cgpa * 9.5;
+        const percentage = cgpa * 10;
         setResult({ cgpa: Number(cgpa.toFixed(2)), percentage: Number(percentage.toFixed(2)) });
     };
 
