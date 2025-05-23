@@ -14,6 +14,9 @@ export default defineConfig({
     port: 3000,
   },
   plugins: [tsconfigPaths(), react(), tailwindcss()], // add " , basicSsl() " to use https for mobile qr permissions
+  build: {
+    outDir: "dist", // optional, default
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
