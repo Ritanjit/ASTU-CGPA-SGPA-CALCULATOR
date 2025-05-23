@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../assets/madaraLogo.png";
+import Logo2 from "../../assets/madaraLogo 2.png";
 import { useNavigate, useLocation } from "react-router";
 import { useTheme } from "@/components/theme-provider/theme-provider";
 import AboutMeButton from "../aboutButton/aboutMe";
@@ -24,7 +25,20 @@ export const Footer: React.FC = () => {
             <img
               src={Logo}
               alt="Logo"
-              className="h-30 w-auto mb-3 mx-auto md:mx-0 cursor-pointer"
+              className="h-30 w-auto hidden mb-3 mx-auto md:mx-0 sm:block cursor-pointer"
+              onClick={() => {
+                if (location.pathname === "/") {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                } else {
+                  navigate("/");
+                  window.scrollTo({ top: 0, behavior: "instant" });
+                }
+              }}
+            />
+            <img
+              src={Logo2}
+              alt="Logo"
+              className="h-30 w-auto block mb-3 mx-auto md:mx-0 sm:hidden cursor-pointer"
               onClick={() => {
                 if (location.pathname === "/") {
                   window.scrollTo({ top: 0, behavior: "smooth" });

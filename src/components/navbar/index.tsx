@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ModeToggle } from "@/components/theme-provider/mode-toggle";
 import Logo from "../../assets/uchihaden.png";
+import Logo2 from "../../assets/DFAS.png";
 import blankLogo from "../../assets/blank.png";
 import { Button } from "../ui/button";
 import { Home, Compass, Layers, Calendar, Info, ScanQrCode } from "lucide-react"; // Icons for bottom navbar
@@ -40,7 +41,19 @@ const Navbar = () => {
         </div>
 
         {/* Decorative Logo - Moves to Right for Small Screens */}
-        <img src={Logo} alt="Logo" className="absolute right-5 sm:right-255 z-50 h-20 sm:h-16 w-auto 
+        <img src={Logo} alt="Logo" className="absolute hidden sm:block sm:right-255 z-50 h-20 sm:h-16 w-auto 
+        hover:cursor-pointer"
+            onClick={() => {
+              if (location.pathname === "/") {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              } else {
+                navigate("/");
+                window.scrollTo({ top: 0, behavior: "instant" });
+              }
+            }}
+          />
+
+          <img src={Logo2} alt="Logo" className="absolute rounded-full right-30 block sm:hidden z-50 h-22 w-auto 
         hover:cursor-pointer"
             onClick={() => {
               if (location.pathname === "/") {
