@@ -3,8 +3,8 @@ import { FiEye, FiEyeOff } from "react-icons/fi";
 import { login, signup } from "../../actions/users";
 import { useEffect } from "react";
 import SamaguriEntrance from "../../assets/samaguri entrance.jpg";
-import horai from "../../assets/horai.png";
-import vid from "../../assets/majuli1.mp4";
+// import horai from "../../assets/horai.png";
+// import vid from "../../assets/majuli1.mp4";
 import { useNavigate } from "react-router";
 import './auth.css'
 import { X } from "lucide-react";
@@ -135,7 +135,7 @@ const Auth: React.FC = () => {
         <div className="lg:w-1/2 xl:w-5/12 flex flex-col justify-center 
         bg-white shadow-lg h-full pt-10">
           <div className="flex justify-center mb-6">
-            <img src={horai} alt="Logo" className="w-20 h-auto" />
+            {/* <img src={horai} alt="Logo" className="w-20 h-auto" /> */}
           </div>
 
           {/* Tabs */}
@@ -291,7 +291,7 @@ const Auth: React.FC = () => {
         />
         <div>
           <video
-            src={vid}
+            // src={vid}
             autoPlay
             loop
             muted
